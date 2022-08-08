@@ -18,6 +18,7 @@
 		4FB2A8BC28A1253D00F9F157 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2A8BB28A1253D00F9F157 /* NotificationsView.swift */; };
 		4FB2A8BE28A1254700F9F157 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2A8BD28A1254700F9F157 /* MessagesView.swift */; };
 		4FB2A8C228A1268800F9F157 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2A8C128A1268800F9F157 /* ProfileView.swift */; };
+		4FB2A8C428A19D2B00F9F157 /* TweetFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2A8C328A19D2B00F9F157 /* TweetFilterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		4FB2A8BB28A1253D00F9F157 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		4FB2A8BD28A1254700F9F157 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		4FB2A8C128A1268800F9F157 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		4FB2A8C328A19D2B00F9F157 /* TweetFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetFilterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 		4FB2A8BF28A1266D00F9F157 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4FB2A8C328A19D2B00F9F157 /* TweetFilterViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				4FB2A8C228A1268800F9F157 /* ProfileView.swift in Sources */,
 				4F1F0073289FD11100B26B12 /* ContentView.swift in Sources */,
 				4F1F008B289FE31F00B26B12 /* TweetRowView.swift in Sources */,
+				4FB2A8C428A19D2B00F9F157 /* TweetFilterViewModel.swift in Sources */,
 				4F1F0087289FDAD300B26B12 /* FeedView.swift in Sources */,
 				4F1F0071289FD11100B26B12 /* TwitterCloneApp.swift in Sources */,
 				4FB2A8BA28A1253400F9F157 /* ExploreView.swift in Sources */,
