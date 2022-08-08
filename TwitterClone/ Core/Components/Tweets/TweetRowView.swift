@@ -22,14 +22,14 @@ struct TweetRowView: View {
                     
                     //User info & tweet caption
                     HStack {
-                        Text("Rajpal Yadav")
+                        Text("Oscar Piastri")
                             .font(.subheadline).bold()
                         
-                        Text("@sexyboy")
+                        Text("@OscarPiastri")
                             .font(.caption)
                             .foregroundColor(.gray)
                         
-                        Text("34w")
+                        Text("3d")
                             .font(.caption)
                             .foregroundColor(.gray)
                         
@@ -37,7 +37,7 @@ struct TweetRowView: View {
                     
                     
                     //tweet caption
-                    Text("I am the king of the world")
+                    Text("I understand that without my agreement, Apline F1 have put out a press release late this afternoon that I am driving for them next year. This is wrong and I have not signed a contract with Alpine for 2023. I will not be driving for them next year.")
                         .font(.subheadline)
                         .multilineTextAlignment(.leading)
                 }
