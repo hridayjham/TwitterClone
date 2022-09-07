@@ -14,27 +14,12 @@ struct LoginView: View {
         //parent container
         VStack {
             //header view
-            VStack(alignment: .leading) {
-                HStack { Spacer() }
-                
-                Text("Hello.")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-               
-                Text("Welcome Back")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-            }
-            .frame(height: 260)
-            .padding(.leading)
-            .background(Color(.systemBlue))
-            .foregroundColor(.white)
-            .clipShape(RoundedShape(corners: [.bottomRight]))
+            AuthenticationHeader(upperText: "Hello.", lowerText: "Welcome Back")
             
             VStack(spacing: 40) {
-                TextField("Email", text: $email)
+                CustomInputField(imageName: "envelope", placeholderText: "Email", text: $email)
                 
-                TextField("Password", text: $password)
+                CustomInputField(imageName: "lock", placeholderText: "Password", text: $password)
             }
             .padding(.horizontal, 32)
             .padding(.top, 44)
@@ -55,7 +40,7 @@ struct LoginView: View {
             }
             
             Button {
-                //do action
+                print("sign in here")
             } label: {
                 Text("Sign in")
                     .font(.headline)

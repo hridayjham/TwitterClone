@@ -23,6 +23,8 @@
 		4F5C7B5628ABE9DA00C897ED /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C7B5528ABE9DA00C897ED /* LoginView.swift */; };
 		4F5C7B5828ABE9E700C897ED /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C7B5728ABE9E700C897ED /* RegistrationView.swift */; };
 		4F5C7B5A28AC33A000C897ED /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C7B5928AC33A000C897ED /* RoundedShape.swift */; };
+		4F6B01B228C8F9A00002E8AB /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6B01B128C8F9A00002E8AB /* CustomInputField.swift */; };
+		4F6B01B528C8FD280002E8AB /* AuthenticationHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6B01B428C8FD280002E8AB /* AuthenticationHeader.swift */; };
 		4FB2A8B428A123DE00F9F157 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2A8B328A123DE00F9F157 /* MainTabView.swift */; };
 		4FB2A8BA28A1253400F9F157 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2A8B928A1253400F9F157 /* ExploreView.swift */; };
 		4FB2A8BC28A1253D00F9F157 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2A8BB28A1253D00F9F157 /* NotificationsView.swift */; };
@@ -49,6 +51,8 @@
 		4F5C7B5528ABE9DA00C897ED /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4F5C7B5728ABE9E700C897ED /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		4F5C7B5928AC33A000C897ED /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
+		4F6B01B128C8F9A00002E8AB /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
+		4F6B01B428C8FD280002E8AB /* AuthenticationHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHeader.swift; sourceTree = "<group>"; };
 		4FB2A8B328A123DE00F9F157 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		4FB2A8B928A1253400F9F157 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		4FB2A8BB28A1253D00F9F157 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
@@ -148,10 +152,12 @@
 		4F1F0082289FDA5D00B26B12 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4F6B01B328C8FD010002E8AB /* Authentication */,
 				4F5C7B3C28A2605400C897ED /* Users */,
 				4F1F0088289FE2EC00B26B12 /* Tweets */,
 				4F5C7B4F28A7C10300C897ED /* TextArea.swift */,
 				4F5C7B5928AC33A000C897ED /* RoundedShape.swift */,
+				4F6B01B128C8F9A00002E8AB /* CustomInputField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -287,6 +293,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		4F6B01B328C8FD010002E8AB /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				4F6B01B428C8FD280002E8AB /* AuthenticationHeader.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		4FB2A8B228A123BA00F9F157 /* MainTab */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,6 +433,7 @@
 				4FB2A8C228A1268800F9F157 /* ProfileView.swift in Sources */,
 				4F1F0073289FD11100B26B12 /* ContentView.swift in Sources */,
 				4F5C7B4528A2D36E00C897ED /* SideMenuOptionRowView.swift in Sources */,
+				4F6B01B228C8F9A00002E8AB /* CustomInputField.swift in Sources */,
 				4F1F008B289FE31F00B26B12 /* TweetRowView.swift in Sources */,
 				4FB2A8C428A19D2B00F9F157 /* TweetFilterViewModel.swift in Sources */,
 				4F1F0087289FDAD300B26B12 /* FeedView.swift in Sources */,
@@ -430,6 +445,7 @@
 				4F5C7B5628ABE9DA00C897ED /* LoginView.swift in Sources */,
 				4F5C7B5828ABE9E700C897ED /* RegistrationView.swift in Sources */,
 				4F5C7B4E28A7B8E800C897ED /* NewTweetView.swift in Sources */,
+				4F6B01B528C8FD280002E8AB /* AuthenticationHeader.swift in Sources */,
 				4F5C7B5A28AC33A000C897ED /* RoundedShape.swift in Sources */,
 				4F5C7B3E28A2606500C897ED /* UserRowView.swift in Sources */,
 				4FB2A8B428A123DE00F9F157 /* MainTabView.swift in Sources */,
