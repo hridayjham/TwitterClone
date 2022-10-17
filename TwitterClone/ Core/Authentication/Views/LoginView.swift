@@ -64,7 +64,7 @@ struct LoginView: View {
                     Text("Don't have an account?")
                         .font(.footnote)
                     
-                    Text("Sign In")
+                    Text("Sign Up")
                         .font(.footnote)
                         .fontWeight(.semibold)
                 }
