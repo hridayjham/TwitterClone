@@ -13,6 +13,7 @@
 		4F1F0078289FD11400B26B12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F1F0077289FD11400B26B12 /* Preview Assets.xcassets */; };
 		4F1F0087289FDAD300B26B12 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F0086289FDAD300B26B12 /* FeedView.swift */; };
 		4F1F008B289FE31F00B26B12 /* TweetRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F008A289FE31F00B26B12 /* TweetRowView.swift */; };
+		4F44894F28DB60370055EFF8 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F44894E28DB60370055EFF8 /* ImageUploader.swift */; };
 		4F5C7B3E28A2606500C897ED /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C7B3D28A2606500C897ED /* UserRowView.swift */; };
 		4F5C7B4328A2D36100C897ED /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C7B4228A2D36100C897ED /* SideMenuView.swift */; };
 		4F5C7B4528A2D36E00C897ED /* SideMenuOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C7B4428A2D36E00C897ED /* SideMenuOptionRowView.swift */; };
@@ -32,6 +33,7 @@
 		4F6B01C028C9062B0002E8AB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4F6B01BF28C9062B0002E8AB /* FirebaseStorage */; };
 		4F6B01C228CA28770002E8AB /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6B01C128CA28770002E8AB /* AuthViewModel.swift */; };
 		4F6FA55228D28F15002AD384 /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FA55128D28F15002AD384 /* ProfilePhotoSelectorView.swift */; };
+		4FA578F028FD37AF00817CC7 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA578EF28FD37AF00817CC7 /* UserService.swift */; };
 		4FB2A8B428A123DE00F9F157 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2A8B328A123DE00F9F157 /* MainTabView.swift */; };
 		4FB2A8BA28A1253400F9F157 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2A8B928A1253400F9F157 /* ExploreView.swift */; };
 		4FB2A8BC28A1253D00F9F157 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2A8BB28A1253D00F9F157 /* NotificationsView.swift */; };
@@ -48,6 +50,7 @@
 		4F1F0077289FD11400B26B12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4F1F0086289FDAD300B26B12 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		4F1F008A289FE31F00B26B12 /* TweetRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetRowView.swift; sourceTree = "<group>"; };
+		4F44894E28DB60370055EFF8 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		4F5C7B3D28A2606500C897ED /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
 		4F5C7B4228A2D36100C897ED /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		4F5C7B4428A2D36E00C897ED /* SideMenuOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionRowView.swift; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 		4F6B01B628C903BF0002E8AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		4F6B01C128CA28770002E8AB /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		4F6FA55128D28F15002AD384 /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
+		4FA578EF28FD37AF00817CC7 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		4FB2A8B328A123DE00F9F157 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		4FB2A8B928A1253400F9F157 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		4FB2A8BB28A1253D00F9F157 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 		4F1F006F289FD11100B26B12 /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				4FA578EC28FA341400817CC7 /* Utils */,
 				4F1F0081289FD18300B26B12 /* Extensions */,
 				4F1F0080289FD18000B26B12 /* Model */,
 				4F1F007F289FD17E00B26B12 /* Service */,
@@ -146,6 +151,8 @@
 		4F1F007F289FD17E00B26B12 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				4F44894E28DB60370055EFF8 /* ImageUploader.swift */,
+				4FA578EF28FD37AF00817CC7 /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -318,6 +325,13 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		4FA578EC28FA341400817CC7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		4FB2A8B228A123BA00F9F157 /* MainTab */ = {
 			isa = PBXGroup;
 			children = (
@@ -458,9 +472,11 @@
 			files = (
 				4FB2A8BE28A1254700F9F157 /* MessagesView.swift in Sources */,
 				4FB2A8C228A1268800F9F157 /* ProfileView.swift in Sources */,
+				4F44894F28DB60370055EFF8 /* ImageUploader.swift in Sources */,
 				4F1F0073289FD11100B26B12 /* ContentView.swift in Sources */,
 				4F5C7B4528A2D36E00C897ED /* SideMenuOptionRowView.swift in Sources */,
 				4F6B01B228C8F9A00002E8AB /* CustomInputField.swift in Sources */,
+				4FA578F028FD37AF00817CC7 /* UserService.swift in Sources */,
 				4F1F008B289FE31F00B26B12 /* TweetRowView.swift in Sources */,
 				4FB2A8C428A19D2B00F9F157 /* TweetFilterViewModel.swift in Sources */,
 				4F1F0087289FDAD300B26B12 /* FeedView.swift in Sources */,

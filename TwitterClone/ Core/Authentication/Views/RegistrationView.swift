@@ -16,61 +16,70 @@ struct RegistrationView: View {
     @EnvironmentObject var viewModel: AuthViewModel
     var body: some View {
         //parent container
-        VStack {
-            
-            NavigationLink(destination: ProfilePhotoSelectorView(),
-                           isActive: $viewModel.didAuthenticateUser,
-                           label: { })
-            
-            //header view
-            AuthenticationHeader(upperText: "Get started.", lowerText: "Create your account")
-            
-            VStack(spacing: 40) {
-                CustomInputField(imageName: "envelope", placeholderText: "Email", text: $email)
+        NavigationStack {
+            //NavigationLink(destination: ProfilePhotoSelectorView(), label: { })
                 
-                CustomInputField(imageName: "person", placeholderText: "Username", text: $username)
+            
+            VStack {
                 
-                CustomInputField(imageName: "person", placeholderText: "Full name", text: $fullName)
                 
-                CustomInputField(imageName: "lock", placeholderText: "Password", isSecureField: true, text: $password)
+                //header view
+                AuthenticationHeader(upperText: "Get started.", lowerText: "Create your account")
                 
-            }
-            .padding(.horizontal, 32)
-            .padding(.top, 44)
-            
-            
-            Button {
-                viewModel.register(withEmail: email, password: password, fullname: fullName, username: username)
-            } label: {
-                Text("Sign in")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .frame(width: 340, height: 50)
-                    .background(Color(.systemBlue))
-                    .clipShape(Capsule())
-                    .padding()
-            }
-            .shadow(color: .gray.opacity(0.5), radius: 10, x: 0, y: 0)
-            .padding(.top, 32)
-            
-            Spacer()
-            
-            Button {
-                presentationMode.wrappedValue.dismiss()
-            } label: {
-                HStack {
-                    Text("Already have an account?")
-                        .font(.footnote)
+                VStack(spacing: 40) {
+                    CustomInputField(imageName: "envelope", placeholderText: "Email", text: $email)
                     
-                    Text("Sign Up")
-                        .font(.footnote)
-                        .fontWeight(.semibold)
+                    CustomInputField(imageName: "person", placeholderText: "Username", text: $username)
+                    
+                    CustomInputField(imageName: "person", placeholderText: "Full name", text: $fullName)
+                    
+                    CustomInputField(imageName: "lock", placeholderText: "Password", isSecureField: true, text: $password)
+                    
                 }
-                .padding(.bottom, 32)
+                .padding(.horizontal, 32)
+                .padding(.top, 44)
+                
+                
+                Button {
+                    viewModel.register(withEmail: email, password: password, fullname: fullName, username: username)
+                } label: {
+                    Text("Sign in")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .frame(width: 340, height: 50)
+                        .background(Color(.systemBlue))
+                        .clipShape(Capsule())
+                        .padding()
+                }
+                .shadow(color: .gray.opacity(0.5), radius: 10, x: 0, y: 0)
+                .padding(.top, 32)
+                
+                Spacer()
+                
+                Button {
+                    presentationMode.wrappedValue.dismiss()
+                } label: {
+                    HStack {
+                        Text("Already have an account?")
+                            .font(.footnote)
+                        
+                        Text("Sign In")
+                            .font(.footnote)
+                            .fontWeight(.semibold)
+                    }
+                    .padding(.bottom, 32)
+                }
             }
+            .ignoresSafeArea()
+            .navigationBarHidden(true)
+            .navigationDestination(isPresented: $viewModel.didAuthenticateUser) {
+
+                    ProfilePhotoSelectorView()
+
+            }
+            
         }
-        .ignoresSafeArea()
-        .navigationBarHidden(true)
+        
     }
 }
 

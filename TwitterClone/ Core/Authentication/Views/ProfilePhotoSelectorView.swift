@@ -12,10 +12,13 @@ struct ProfilePhotoSelectorView: View {
     @State private var selectedItem: PhotosPickerItem? = nil
     @State private var selectedImageData: Data? = nil
     @State private var profileImage: Image?
+    @EnvironmentObject var viewModel: AuthViewModel
+    
     var body: some View {
+        
         VStack {
-            AuthenticationHeader(upperText: "Setup account", lowerText: "Select a profile picture.")
             
+            AuthenticationHeader(upperText: "Setup account", lowerText: "Select profile picture")
             
             PhotosPicker(selection: $selectedItem,
                          matching: .images,
@@ -67,7 +70,7 @@ struct ProfilePhotoSelectorView: View {
             
             if selectedImageData != nil {
                 Button {
-                    print("DEBUG: Finish registering user")
+                    viewModel.uploadImage(UIImage(data: selectedImageData!)!)
                 } label: {
                     Text("Continue")
                         .font(.headline)
